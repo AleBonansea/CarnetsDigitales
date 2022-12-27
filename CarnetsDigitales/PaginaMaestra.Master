@@ -1,0 +1,24 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PaginaMaestra.master.cs" Inherits="CarnetsDigitales.PaginaMaestra" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Carnets Digitales</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="CSS/Styles.css" rel="stylesheet" />
+    <script src="JS/validaciones.Js"></script>
+</head>
+<body style="background-color:#020202;">
+    <form id="form1" runat="server">
+        <div style="background-color:#020202; height:140px;">
+            <img style="margin:auto;Margin-top:30px; height:80px" align="right" src="Imagenes/Logo.png" />
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="Contenido" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,27 @@
+create table Roles
+(
+Id INT PRIMARY KEY IDENTITY(1,1) NOT NULL,
+Rol VARCHAR(60) NOT NULL,
+)
+
+INSERT INTO Roles (Rol) VALUES ('Administrativo')
+INSERT INTO Roles (Rol) VALUES ('ResponsableDeClub')
+INSERT INTO Roles (Rol) VALUES ('Jugador')
+INSERT INTO Roles (Rol) VALUES ('Arbitro')
+INSERT INTO Roles (Rol) VALUES ('Entrenador')
+
+
+create table Usuarios
+(
+Id INT PRIMARY KEY IDENTITY(1,1) NOT NULL,
+IdRol INT NOT NULL,
+Usuario VARCHAR(60) NOT NULL,
+Clave VARCHAR(24) NOT NULL,
+Nombre VARCHAR(60) NOT NULL,
+Apellido VARCHAR(60) NOT NULL,
+DNI VARCHAR(20) NOT NULL,
+Mail VARCHAR(60) NULL,
+ESTADO BIT NULL,
+
+CONSTRAINT [FK_Usuarios_Roles] FOREIGN KEY ([IdRol]) REFERENCES [Roles]([Id])
+)

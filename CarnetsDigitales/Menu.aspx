@@ -1,25 +1,31 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PaginaMaestra.Master" AutoEventWireup="true" CodeBehind="Menu.aspx.cs" Inherits="CarnetsDigitales.Menu" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
-        .auto-style1 {
-            width: 249px;
-        }
-        .auto-style3 {
-            width: 249px;
-            height: 32px;
-        }
-        .auto-style4 {
-            width: 433px;
-        }
-        .auto-style5 {
-            width: 433px;
-            height: 32px;
-        }
+        .auto-style7 {
+        border-style: none;
+        border-color: inherit;
+        border-width: medium;
+        margin-left: 5%;
+        margin-top: 5%;
+        text-align: center;
+        width: 954px;
+        height: 374px;
+    }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Contenido" runat="server">
     
-    <table class="tabla" style="width:600px; text-align:center">
+    <div class="auto-style7">   
+        <asp:Button ID="btnCarnet" class="btnMenu" Text="Carnet" runat="server" />
+        <asp:Button onclick="btnConsultas_Click" class="btnMenu" ID="btnConsultas" Text="Consultas" runat="server" />
+        <asp:Button ID="btnArbitros" class="btnMenu" Text="Registro Árbitros" runat="server" />
+        <asp:Button ID="btnClubes" class="btnMenu" Text="Registro Clubes" runat="server" />
+        <asp:Button ID="btnEntrenadores" class="btnMenu" Text="Registro Entrenadores" runat="server" />
+        <asp:Button ID="btnEquipos" class="btnMenu" Text="Registro Equipos" runat="server" />
+        <asp:Button ID="btnJugadores" class="btnMenu" Text="Registro Jugadores" runat="server" />
+
+    </div>
+<%--    <table class="tabla" style="width:600px; text-align:center">
         <tr style="column-width:100px;">
             <td ><asp:Button ID="btnCarnets" class="btnMenu" Text="Carnets" runat="server" /></td>
             <td ><asp:Button onclick="btnConsultas_Click" class="btnMenu" ID="btnConsultas" Text="Consultas" runat="server" /></td>
@@ -36,5 +42,5 @@
             <td ><asp:Button ID="btnJugadores" class="btnMenu" Text="Registro Jugadores" runat="server" /></td>            
         </tr>
        
-    </table>   
+    </table>   --%>
 </asp:Content>

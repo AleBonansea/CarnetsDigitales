@@ -50,6 +50,7 @@ C:\Users\abonansea\OneDrive\IES - Informática\Tesis\CarnetsDigitales\CarnetsDig
 C:\Users\abonansea\OneDrive\IES - Informática\Tesis\CarnetsDigitales\CarnetsDigitales\bin\roslyn\vbc.rsp
 C:\Users\abonansea\OneDrive\IES - Informática\Tesis\CarnetsDigitales\CarnetsDigitales\bin\roslyn\VBCSCompiler.exe
 C:\Users\abonansea\OneDrive\IES - Informática\Tesis\CarnetsDigitales\CarnetsDigitales\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\abonansea\OneDrive\IES - Informática\Tesis\CarnetsDigitales\CarnetsDigitales\bin\AjaxControlToolkit.dll
 C:\Users\abonansea\OneDrive\IES - Informática\Tesis\CarnetsDigitales\CarnetsDigitales\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\abonansea\OneDrive\IES - Informática\Tesis\CarnetsDigitales\CarnetsDigitales\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\abonansea\OneDrive\IES - Informática\Tesis\CarnetsDigitales\CarnetsDigitales\obj\Debug\CarnetsDigitales.csproj.AssemblyReference.cache
@@ -57,4 +58,3 @@ C:\Users\abonansea\OneDrive\IES - Informática\Tesis\CarnetsDigitales\CarnetsDig
 C:\Users\abonansea\OneDrive\IES - Informática\Tesis\CarnetsDigitales\CarnetsDigitales\obj\Debug\CarnetsDigitales.csproj.CopyComplete
 C:\Users\abonansea\OneDrive\IES - Informática\Tesis\CarnetsDigitales\CarnetsDigitales\obj\Debug\CarnetsDigitales.dll
 C:\Users\abonansea\OneDrive\IES - Informática\Tesis\CarnetsDigitales\CarnetsDigitales\obj\Debug\CarnetsDigitales.pdb
-C:\Users\abonansea\OneDrive\IES - Informática\Tesis\CarnetsDigitales\CarnetsDigitales\bin\AjaxControlToolkit.dll

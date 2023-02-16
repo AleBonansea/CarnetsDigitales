@@ -21,7 +21,7 @@ namespace CarnetsDigitales
         {
             
             SqlConnection con =  new SqlConnection(connectionString);
-            string selectSQL = "Select Nombre, Clave, idRol FROM Usuarios where Usuario = '" + txtUsuario.Text + "' and Clave = '" + txtContraseña.Text + "'";
+            string selectSQL = "Select Usuario, Contraseña, RolId FROM Usuarios where Usuario = '" + txtUsuario.Text + "' and Contraseña = '" + txtContraseña.Text + "'";
             con.Open();
         SqlCommand cmd = new SqlCommand(selectSQL, con);
             SqlDataReader dr = cmd.ExecuteReader();
@@ -30,7 +30,7 @@ namespace CarnetsDigitales
                
                 while (dr.Read())
                 {
-                    Session["rolId"] = dr["idRol"].ToString();
+                    Session["rolId"] = dr["RolId"].ToString();
                     Server.Transfer("Menu.aspx");
                 }
                 

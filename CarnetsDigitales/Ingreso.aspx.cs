@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
@@ -18,23 +19,24 @@ namespace CarnetsDigitales
 
         protected void btnIngresar_Click(object sender, EventArgs e)
         {
+            
             SqlConnection con =  new SqlConnection(connectionString);
-            string selectSQL = "Select Nombre, Clave FROM Usuarios where Usuario = '" + txtUsuario.Text + "' and Clave = '" + txtContraseña.Text + "'";
+            string selectSQL = "Select Nombre, Clave, idRol FROM Usuarios where Usuario = '" + txtUsuario.Text + "' and Clave = '" + txtContraseña.Text + "'";
             con.Open();
         SqlCommand cmd = new SqlCommand(selectSQL, con);
             SqlDataReader dr = cmd.ExecuteReader();
 
         if (dr.HasRows)
+               
+                while (dr.Read())
                 {
-                Server.Transfer("Menu.aspx");
-                SessionParameter("")
+                    Session["rolId"] = dr["idRol"].ToString();
+                    Server.Transfer("Menu.aspx");
+                }
                 
-                    }
             else
             {
                 lblError.Text = "El Usuario o la Contraseña son incorrectos";
-                /*string script = string.Format("alert('El Usuario o la Contraseña son incorrectos');");
-                ClientScript.RegisterStartupScript(this.GetType(), "alert", script, true);*/
             }
 
             con.Close();

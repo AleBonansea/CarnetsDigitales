@@ -15,13 +15,13 @@ namespace CarnetsDigitales
     {
 
         /// <summary>
-        /// btnCarnets control.
+        /// btnCarnet control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCarnets;
+        protected global::System.Web.UI.WebControls.Button btnCarnet;
 
         /// <summary>
         /// btnConsultas control.
@@ -60,13 +60,13 @@ namespace CarnetsDigitales
         protected global::System.Web.UI.WebControls.Button btnEntrenadores;
 
         /// <summary>
-        /// btnEquioos control.
+        /// btnEquipos control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnEquioos;
+        protected global::System.Web.UI.WebControls.Button btnEquipos;
 
         /// <summary>
         /// btnJugadores control.
